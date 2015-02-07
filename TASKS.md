@@ -12,3 +12,6 @@ each lesson can correspond with what's happening
 making it easy for faculty from NYC 
 come and teach the class without learning how to do it here
 course material + [support material]
+
+---
+add a little bit
