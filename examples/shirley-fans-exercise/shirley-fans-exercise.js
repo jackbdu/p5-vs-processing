@@ -8,7 +8,7 @@ function setup() {
 function draw() {
 	smooth();
 	noStroke();
-	if (mouseIsPressed or touchIsDown) {
+	if (mouseIsPressed) {
 		if (frameCount % 10 == 0) {
 			fill(50 + frameCount * 3 % 255, 100, random(150, 255));
 			push();
