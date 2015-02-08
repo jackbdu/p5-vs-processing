@@ -8,7 +8,7 @@ function setup() {
 function draw() {
 	smooth();
 	noStroke();
-	if (mouseIsPressed) {
+	if (mouseIsPressed or touchIsDown) {
 		if (frameCount % 10 == 0) {
 			fill(50 + frameCount * 3 % 255, 100, random(150, 255));
 			push();
@@ -19,3 +19,10 @@ function draw() {
 		}
 	}
 }
+
+/*changes
+ + moved smooth() and noStroke() down to draw()
+ + added touch events
+ + changed push/popMatrix to push/pop
+ + quasi-responsive canvas
+*/
