@@ -13,6 +13,7 @@ function draw() {
 			fill(50 + frameCount * 3 % 255, 100, random(150, 255));
 			push();
 			translate(mouseX, mouseY);
+			translate(touchX, touchY);
 			rotate(radians(frameCount * 1 % 360));
 			rect(0, 0, 100, 10);
 			pop();
