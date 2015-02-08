@@ -1,17 +1,20 @@
-discover diff P5 vs Processing
-build example projects
-hello.processing.org/editor/
-p5.js connecting with arduino
-"book" - code sharing sites?
+### Todo
++ figure out differences between P5.js vs Processing
 
-what can you do with P5 / what cant you do
----
-ultimate goal: next fall things are done
-each lesson can correspond with what's happening
-"too many students"
-making it easy for faculty from NYC 
-come and teach the class without learning how to do it here
-course material + [support material]
+  what can/cannot one do with P5.js/Processing
+  
++ build example projects using P5.js
 
----
-add a little bit
++ p5.js connecting with arduino
+
++ website / app serving as the "textbook" for intlab classes 
+
+  look into code sharing sites?
+  live p5.js editor hello.processing.org/editor/
+
+### nyushima problems
++ too many students
+
++ faculty transition from NYU washington sq
+
+  faculty from nyc can come and teach the class without learning how to do it here
