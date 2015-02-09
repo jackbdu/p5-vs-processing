@@ -1,7 +1,7 @@
 ## Differences between p5 and processing
 
-### [keyPressed()](http://p5js.org/reference/#/p5/keyPressed) vs [keyTyped](http://p5js.org/reference/#/p5/keyTyped)
-
+### [keyPressed()](http://p5js.org/reference/#/p5/keyPressed) vs [keyTyped()](http://p5js.org/reference/#/p5/keyTyped)
+#### letter key
 In __processing__, the letter key is __case-sensitive__ in keyPressed():
 ```processing
 key == 'a';
@@ -16,6 +16,7 @@ key === 'A';
 ```
 "For ASCII keys that was pressed is stored in the key variable. However, it does not distinguish between uppercase and lowercase. For this reason, it is recommended to use keyTyped() to read the key variable, in which the case of the variable will be distinguished." \( [p5.js reference](http://p5js.org/reference/#/p5/keyPressed) \)
 
+####arrow key
 In __processing__, arrow keys are used as below:
 ```processing
 key == UP;
