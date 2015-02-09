@@ -38,95 +38,100 @@ function draw() {
 
 function keyPressed() {
   
-  // only by pressing "space" will keyDown = true, which means it starts to draw
-  if (key == ' ') {
-    keyDown = true;
-  }
-  
-  // each number represents the relative horizontal position of the circles drew after pressing it
-  // but it is not a absolute position, the position is still random within a range
-  var step = w/20;
-  if (key == '1') {
-    left = 0;
-    right = w - step*9;
-  } else if (key == '2') {
-    left = step;
-    right = w - step*8;
-  } else if (key == '3') {
-    left = step*2;
-    right = w - step*7;
-  } else if (key == '4') {
-    left = step*3;
-    right = w - step*6;
-  } else if (key == '5') {
-    left = step*4;
-    right = w - step*5;
-  } else if (key == '6') {
-    left = step*5;
-    right = w - step*4;
-  } else if (key == '7') {
-    left = step*6;
-    right = w - step*3;
-  } else if (key == '8') {
-    left = step*7;
-    right = w - step*2;
-  } else if (key == '9') {
-    left = step*8;
-    right = w - step*1;
-  } else if (key == '0') {
-    left = step*9;
-    right = w;
-  } 
-  
-  // press upper-case letter make the color it stands for added to the color of the circle
-  // lower-case reduce the color
-  if (key == 'R') {
-    redLeft = 126;
-    redRight = 255;
-  } else if (key == 'r') {
-    redLeft = 0;
-    redRight = 125;
-  } else if (key == 'G') {
-    greenLeft = 126;
-    greenRight = 255;
-  } else if (key == 'g') {
-    greenLeft = 0;
-    greenRight = 125;
-  } else if (key == 'B') {
-    blueLeft = 126;
-    blueRight = 255;
-  } else if (key == 'b') {
-    blueLeft = 0;
-    blueRight = 125;
-  }
-  
   // the up key stands for more transparent
   // the down key stands for less transparent
-  if (key == 'up') {
+  if (keyCode === UP_ARROW) {
     aLeft = 6;
     aRight = 10;
-  } else if (key == 'DOWN') {
+  } else if (keyCode === DOWN_ARROW) {
     aLeft = 20;
     aRight = 40;
   }
-  
+    
+  // assign these random values to set these features of the circle
+  a = int(random(aLeft,aRight));
+}
+
+function keyTyped() {
+  // only by pressing "space" will keyDown = true, which means it starts to draw
+  if (key === ' ') {
+    keyDown = true;
+  }
+
+  // each number represents the relative horizontal position of the circles drew after pressing it
+  // but it is not a absolute position, the position is still random within a range
+  var step = w/20;
+  if (key === '1') {
+    left = 0;
+    right = w - step*9;
+  } else if (key === '2') {
+    left = step;
+    right = w - step*8;
+  } else if (key === '3') {
+    left = step*2;
+    right = w - step*7;
+  } else if (key === '4') {
+    left = step*3;
+    right = w - step*6;
+  } else if (key === '5') {
+    left = step*4;
+    right = w - step*5;
+  } else if (key === '6') {
+    left = step*5;
+    right = w - step*4;
+  } else if (key === '7') {
+    left = step*6;
+    right = w - step*3;
+  } else if (key === '8') {
+    left = step*7;
+    right = w - step*2;
+  } else if (key === '9') {
+    left = step*8;
+    right = w - step*1;
+  } else if (key === '0') {
+    left = step*9;
+    right = w;
+  } 
+
+  // press upper-case letter make the color it stands for added to the color of the circle
+  // lower-case reduce the color
+  if (key === 'R') {
+    redLeft = 126;
+    redRight = 255;
+  } else if (key === 'r') {
+    redLeft = 0;
+    redRight = 125;
+  } else if (key === 'G') {
+    greenLeft = 126;
+    greenRight = 255;
+  } else if (key === 'g') {
+    greenLeft = 0;
+    greenRight = 125;
+  } else if (key === 'B') {
+    blueLeft = 126;
+    blueRight = 255;
+  } else if (key === 'b') {
+    blueLeft = 0;
+    blueRight = 125;
+  }
+
   // + stands for bigger size and - stands for smaller size
-  if (key == '=' || key == '+') {
+  if (key === '=' || key === '+') {
     Rmin = 200;
     Rmax = 500;
-  } else if (key == '-' || key == '_') {
+  } else if (key === '-' || key === '_') {
     Rmin = 20;
     Rmax = 100;
   }
-    
+
   // assign these random values to set these features of the circle
   x = int(random(left, right));
   R = int(random(Rmin,Rmax));
   y = int(random(0, h));
-  a = int(random(aLeft,aRight));
   r = int(random(redLeft,redRight));
   g = int(random(greenLeft,greenRight));
   b = int(random(blueLeft,blueRight));
+
 }
     
   // do not draw when "space" is not pressed
