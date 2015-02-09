@@ -1,14 +1,17 @@
+var w = window.innerWidth;
+var h = window.innerHeight;
+
 var keyDown = false;
 var x,y,R;
 var r,g,b;
 var a;
 var left = 0, redLeft = 0, greenLeft = 0, blueLeft = 0, aLeft = 10; 
-var right = 800, redRight = 255, greenRight = 255, blueRight = 255, aRight = 35;
+var right = w, redRight = 255, greenRight = 255, blueRight = 255, aRight = 35;
 var Rmin = 20, Rmax = 500;
 var oldKey = 0;
 
 function setup() {
-	createCanvas(800,600);
+	createCanvas(w, h);
 	background(255);
 	smooth();
 }
@@ -42,36 +45,37 @@ function keyPressed() {
   
   // each number represents the relative horizontal position of the circles drew after pressing it
   // but it is not a absolute position, the position is still random within a range
+  var step = w/20;
   if (key == '1') {
     left = 0;
-    right = 305;
+    right = w - step*9;
   } else if (key == '2') {
-    left = 55;
-    right = 360;
+    left = step;
+    right = w - step*8;
   } else if (key == '3') {
-    left = 110;
-    right = 415;
+    left = step*2;
+    right = w - step*7;
   } else if (key == '4') {
-    left = 165;
-    right = 470;
+    left = step*3;
+    right = w - step*6;
   } else if (key == '5') {
-    left = 220;
-    right = 525;
+    left = step*4;
+    right = w - step*5;
   } else if (key == '6') {
-    left = 275;
-    right = 580;
+    left = step*5;
+    right = w - step*4;
   } else if (key == '7') {
-    left = 330;
-    right = 635;
+    left = step*6;
+    right = w - step*3;
   } else if (key == '8') {
-    left = 385;
-    right = 690;
+    left = step*7;
+    right = w - step*2;
   } else if (key == '9') {
-    left = 440;
-    right = 745;
+    left = step*8;
+    right = w - step*1;
   } else if (key == '0') {
-    left = 495;
-    right = 800;
+    left = step*9;
+    right = w;
   } 
   
   // press upper-case letter make the color it stands for added to the color of the circle
@@ -116,9 +120,9 @@ function keyPressed() {
   }
     
   // assign these random values to set these features of the circle
-  x = int(random(left,right));
+  x = int(random(left, right));
   R = int(random(Rmin,Rmax));
-  y = int(random(0,600));
+  y = int(random(0, h));
   a = int(random(aLeft,aRight));
   r = int(random(redLeft,redRight));
   g = int(random(greenLeft,greenRight));
