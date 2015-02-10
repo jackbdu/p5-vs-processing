@@ -10,18 +10,21 @@
 
 ## LIBRARIES
 
-### video libraries
-
-[p5.dom](http://p5js.org/reference/#/libraries/p5.dom)
+### [p5.dom](http://p5js.org/reference/#/libraries/p5.dom)
 
 p5.dom lets you interact with HTML5 objects beyond the canvas, including video, audio, webcam, input, and text.
++ storing pointers and calling methods
++ creating other HTML elements
++ creating HTML images
++ creating HTML media elements
++ element specific listeners
++ setting style
 
-### audio libraries
 
-[p5.sound](http://p5js.org/reference/#/libraries/p5.sound)
+### [p5.sound](http://p5js.org/reference/#/libraries/p5.sound)
 
 Audio functionality including audio input, playback, analysis and synthesis.
 
-[p5.gibber](http://charlie-roberts.com/gibber/p5-gibber/)
+###[p5.gibber](http://charlie-roberts.com/gibber/p5-gibber/)
 
 p5.gibber provides rapid music sequencing and audio synthesis capabilities.
