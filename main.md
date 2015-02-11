@@ -13,12 +13,13 @@
 ### [p5.dom](http://p5js.org/reference/#/libraries/p5.dom)
 
 p5.dom lets you interact with HTML5 objects beyond the canvas, including video, audio, webcam, input, and text.
-+ storing pointers and calling methods
-+ creating other HTML elements
-+ creating HTML images
-+ creating HTML media elements
-+ element specific listeners
-+ setting style
++ [storing pointers and calling methods]()
++ [creating other HTML elements](https://cdn.rawgit.com/JackBDu/p5-vs-processing/master/examples/dom-examples/creating-html-elements/index.html)
++ [creating HTML images](https://cdn.rawgit.com/JackBDu/p5-vs-processing/master/examples/dom-examples/creating-html-images/index.html)
++ [creating HTML media elements]()
++ [element specific listeners]()
++ [setting style]()
++ [removing things]()
 
 
 ### [p5.sound](http://p5js.org/reference/#/libraries/p5.sound)
