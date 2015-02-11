@@ -14,7 +14,7 @@ function draw() {
 	background(200);
 	fill(100);
 	rectMode(CENTER);
-	rect(mouseX, mouseY, 100, 100);
+	ellipse(mouseX, mouseY, 10, 10);
 	if (mouseX>w/2) {
 		removeElements();
 	}
