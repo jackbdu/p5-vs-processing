@@ -18,3 +18,7 @@
 + faculty transition from NYU washington sq
 
   faculty from nyc can come and teach the class without learning how to do it here
+  
+### Ideas for website
+
++ Online editor based on Google Blockly 
